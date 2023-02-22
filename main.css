@@ -546,3 +546,7 @@ video {
     max-width: 1536px;
   }
 }
+
+.text-center {
+  text-align: center;
+}
