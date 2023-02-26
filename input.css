@@ -6,6 +6,7 @@ body{
   margin: 0 auto;
   padding: 0;
   font-family: sans-serif;
+  font-size: 15px;
 }
 
 #container{
@@ -25,22 +26,25 @@ body{
 }
 #description #header{
   font-size: 2rem;
+  font-weight: 700;
   color: hsl(300, 43%, 22%);
   margin: 1rem auto;
 }
 #description #desc{
-  font-size: 15px;
   color: hsl(303, 10%, 53%);
+  font-weight: 500;
 }
 
 #ratings{
   margin-top: 3rem auto;
+  font-weight: 700;
 }
 
 #ratings .ratings{
   background-color: hsl(300, 24%, 96%);
   color: hsl(300, 43%, 22%);
-  padding: .5rem;
+  padding: 1rem;
+  padding-bottom: .2rem;
   margin: 1rem auto;
   border-radius: .5rem;
 }
@@ -85,4 +89,82 @@ body{
 }
 .nameCont .subName{
   color: hsl(333, 80%, 67%);
+}
+
+
+/* Style for wider screen */
+@media (min-width: 768px) {
+  body{
+
+  }
+  #container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  #detRate{
+    display: flex;
+    flex-flow: row nowrap;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem; */
+    /* padding: 0; */
+    /* margin: 0; */
+  }
+  #detRate #description{
+    flex: 1 1;
+    /* width: 50%; */
+    text-align: start;
+    padding-right: 20%;
+  }
+  #detRate #ratings{
+    padding: auto auto;
+    display: absolute;
+    /* flex: 1 1; */
+
+  }
+  #ratings .ratings{
+    display: flex;
+    width: auto;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .ratings .stars{
+    transform: scale(.8);
+    /* flex: 1; */
+  }
+  .ratings .rateDesc{
+    /* flex: 1; */
+    font-size: .7rem;
+  }
+  
+  /* .r1{
+    margin-left: -2rem; 
+  }
+  .r3{
+    align-self: self-end;
+  } */
+
+  #testimonial{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* display: grid;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 5%; */
+    margin: 0;
+    /* padding: 2rem 0; */
+    height: 20rem;
+  }
+  .card{
+    /* height: 240px; */
+    width: 330px;
+  }
+  .c1{
+    /* margin-right: 5%; */
+    align-self: flex-start;
+  }
+  .card:nth-child(3){
+    align-self: flex-end;
+  }
 }
