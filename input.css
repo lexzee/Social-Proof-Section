@@ -115,19 +115,34 @@ body{
     flex: 1 1;
     /* width: 50%; */
     text-align: start;
-    padding-right: 20%;
+    padding-right: 10%;
   }
-  #detRate #ratings{
+  #detRate #rat{
+    flex: 1 1;
+    text-align: center;
+  }
+  /*#detRate #ratings{
     padding: auto auto;
-    display: absolute;
-    /* flex: 1 1; */
+    /*display: absolute;*
+    flex: 1 1;
 
+  }*/
+  #ratings{
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    /* background-color: blue; */
+    position: relative;
+    margin: 0;
   }
   #ratings .ratings{
     display: flex;
-    width: auto;
+    width: 20rem;
     align-items: center;
-    justify-content: space-around;
+    justify-content: between;
+    padding: 0;
+    margin: .3rem auto;
+    position: relative;
   }
   .ratings .stars{
     transform: scale(.8);
@@ -135,15 +150,18 @@ body{
   }
   .ratings .rateDesc{
     /* flex: 1; */
-    font-size: .7rem;
+    /* font-size: .7rem; */
   }
   
-  /* .r1{
-    margin-left: -2rem; 
+  #ratings > .r1{
+    align-self: start; 
+    left: -2.5rem;
+    
   }
   .r3{
-    align-self: self-end;
-  } */
+    align-self: end;
+    left: 2.5rem;
+  }
 
   #testimonial{
     display: flex;
