@@ -154,11 +154,11 @@ body{
     column-gap: 5%; */
     margin: 0;
     /* padding: 2rem 0; */
-    height: 20rem;
+    height: 18rem;
   }
   .card{
     /* height: 240px; */
-    width: 330px;
+    width: 250px;
   }
   .c1{
     /* margin-right: 5%; */
